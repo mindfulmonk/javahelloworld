@@ -5,4 +5,5 @@ WORKDIR /home/root/javahelloworld
 RUN mkdir bin
 RUN javac -d bin src/HelloWorld.java
 ENV FOO bar
+ENV BAR foo
 ENTRYPOINT ["java", "-cp", "bin", "HelloWorld"]
